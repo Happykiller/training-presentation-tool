@@ -71,10 +71,14 @@ body {
   word-wrap: break-word; }
 
 .reveal h1 {
-  font-size: 2.5em; }
+  font-size: 2.5em;
+  color: #DC042B;
+}
 
 .reveal h2 {
-  font-size: 1.6em; }
+  font-size: 1.6em;
+  color: #DC042B;
+}
 
 .reveal h3 {
   font-size: 1.3em; }
@@ -209,6 +213,15 @@ body {
 
 .reveal small * {
   vertical-align: top; }
+
+li { list-style-image: url(../../images/li-bullet.png); }
+
+.breadcrumb li {
+  display: inline;
+}
+.breadcrumb li+li:before {
+  content:"» ";
+}
 
 /*********************************************
  * LINKS
