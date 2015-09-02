@@ -216,11 +216,28 @@ body {
 
 li { list-style-image: url(../../images/li-bullet.png); }
 
-.breadcrumb li {
+.breadcrumbDisplay span {
+  font-family: monospace;
+  font-size: x-large;
+  font-weight: bold;
+  color: #19465F;
+}
+
+.breadcrumbDisplay .current {
+  color : #DC042B;
+}
+
+.breadcrumbDisplay li {
   display: inline;
 }
-.breadcrumb li+li:before {
+
+.breadcrumbDisplay li+li:before {
+  color : white;
   content:"» ";
+}
+
+.breadcrumb {
+  display: none;
 }
 
 /*********************************************

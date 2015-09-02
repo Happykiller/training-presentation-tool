@@ -906,6 +906,55 @@
 			} );
 		}
 
+		window.addEventListener( 'slidechanged', function( event ) {
+			// event.previousSlide, event.currentSlide, event.indexh, event.indexv
+			console.log(event.currentSlide);
+			var element = document.getElementById('bonitaBreadcrumb');
+			if (!(typeof(element) != 'undefined' && element != null)) {
+				var div1 = document.createElement('div');
+				div1.id = "bonitaBreadcrumb";
+				div1.style.position = "fixed";
+				div1.style.top = "10px";
+				div1.style.left = "10px";
+				div1.style.width = "100%";
+				div1.style.padding = "5px";
+				document.body.appendChild(div1);
+			}
+
+			var element = document.getElementById('bonitaBreadcrumb');
+
+			var elems = event.currentSlide.getElementsByClassName('breadcrumb');
+			var strHtml = "";
+			if (elems.length > 0) {
+				strHtml += '<ol class="breadcrumbDisplay">';
+				var content = elems[0].innerHTML;
+				var elts = content.split(";");
+				elts.splice(-1, 1);
+				for (var i = 0; i < elts.length; i++) {
+					var msg = elts[i].split("|")[0];
+					var options = [];
+					if(content.split("|").length>1){
+						options = elts[i].split("|");
+						options.splice(0, 1);
+					}
+					var strClass = 'class="';
+					for (var j = 0; j < options.length; j++) {
+						var option = options[j];
+						if(option === "current"){
+							strClass+='current';
+						}
+					}
+					strClass+='"';
+					strHtml += '<li><span '+strClass+'>&nbsp;'+msg+'&nbsp;</span></li>';
+				}
+				strHtml += '</ol>';
+				element.innerHTML = strHtml;
+			}else{
+				element.innerText = "";
+			}
+
+		} );
+
 		sync();
 
 	}
