@@ -945,7 +945,7 @@
 						}
 					}
 					strClass+='"';
-					strHtml += '<li><span '+strClass+'>&nbsp;'+msg+'&nbsp;</span></li>';
+					strHtml += '<li><span '+strClass+'>'+msg+'</span></li>';
 				}
 				strHtml += '</ol>';
 				element.innerHTML = strHtml;
