@@ -908,7 +908,6 @@
 
 		window.addEventListener( 'slidechanged', function( event ) {
 			// event.previousSlide, event.currentSlide, event.indexh, event.indexv
-			console.log(event.currentSlide);
 			var element = document.getElementById('bonitaBreadcrumb');
 			if (!(typeof(element) != 'undefined' && element != null)) {
 				var div1 = document.createElement('div');
