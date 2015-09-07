@@ -329,4 +329,16 @@ li { list-style-image: url(../../images/li-bullet.png); }
  * SLIDE NUMBER
  *********************************************/
 .reveal .slide-number {
-  color: #42affa; }
+  color: #42affa;
+  font-weight: bold;
+}
+
+/*********************************************
+ * BONITA
+ *********************************************/
+.bonitaFooter {
+  font-family: monospace;
+  font-size: x-large;
+  font-weight: bold;
+  color: #19465F
+}

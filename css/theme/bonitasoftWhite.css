@@ -332,3 +332,13 @@ li { list-style-image: url(../../images/li-bullet.png); }
   color: #0016FA;
   font-weight: bold;
 }
+
+/*********************************************
+ * BONITA
+ *********************************************/
+.bonitaFooter {
+  font-family: monospace;
+  font-size: x-large;
+  font-weight: bold;
+  color: #19465F
+}
