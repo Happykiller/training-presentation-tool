@@ -158,3 +158,8 @@ ul, ol, div, p {
 	z-index: 1;
 }
 
+.bonitaFooter {
+	font-family: monospace;
+	font-size: small !important;
+	color: #19465F
+}

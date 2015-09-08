@@ -567,6 +567,19 @@
 					background.style.top = -top + 'px';
 					background.style.left = -left + 'px';
 				}
+
+				var divHeader = document.createElement('div');
+				divHeader.style.position = "absolute";
+				divHeader.style.top = -top + 'px';
+				divHeader.style.right = '0px';
+				divHeader.innerHTML = "<img src='images/logo-bonitasoft.png' class='imgEmptyClass'>";
+				slide.appendChild( divHeader );
+
+				var divFooter = document.createElement('div');
+				divFooter.style.position = "absolute";
+				divFooter.style.top = (-top + slideHeight) + 'px';
+				divFooter.innerHTML = document.getElementById('bonitaFooter').innerHTML;
+				slide.appendChild( divFooter );
 			}
 
 		} );
@@ -575,7 +588,6 @@
 		toArray( dom.wrapper.querySelectorAll( SLIDES_SELECTOR + ' .fragment' ) ).forEach( function( fragment ) {
 			fragment.classList.add( 'visible' );
 		} );
-
 	}
 
 	/**
@@ -906,6 +918,7 @@
 			} );
 		}
 
+		//ADD FRO BONITASOFT BREADCRUMB
 		window.addEventListener( 'slidechanged', function( event ) {
 			// event.previousSlide, event.currentSlide, event.indexh, event.indexv
 			var element = document.getElementById('bonitaBreadcrumb');
@@ -953,6 +966,19 @@
 			}
 
 		} );
+
+		//ADD FOOTER
+		if(!isPrintingPDF()){
+			var divFooter = document.createElement('div');
+			divFooter.id = "bonitafooter";
+			divFooter.style.position = "absolute";
+			divFooter.style.bottom = "10px";
+			divFooter.style.left = "10px";
+			divFooter.style.width = "100%";
+			divFooter.style.padding = "5px";
+			divFooter.innerHTML = document.getElementById('bonitaFooter').innerHTML;
+			document.body.appendChild(divFooter);
+		}
 
 		sync();
 

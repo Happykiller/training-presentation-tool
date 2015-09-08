@@ -24,7 +24,8 @@ div.multicolumn1 {
   -webkit-column-count: 2;
   -webkit-column-gap: 50%;
   column-count: 3;
-  column-gap: 50%; }
+  column-gap: 50%;
+}
 
 .reveal code {
   font-family: monospace;
@@ -233,7 +234,7 @@ li { list-style-image: url(../../images/li-bullet.png); }
 
 .breadcrumbDisplay li+li:before {
   color : white;
-  content:"» ";
+  content:":";
 }
 
 .breadcrumb {
