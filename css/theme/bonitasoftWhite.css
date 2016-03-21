@@ -18,6 +18,9 @@ img.width30 {
 img.width50 {
   width: 50%; }
 
+img.width75 {
+  width: 75%; }
+
 div.multicolumn1 {
   -moz-column-count: 2;
   -moz-column-gap: 50%;
