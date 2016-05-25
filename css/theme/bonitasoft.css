@@ -17,7 +17,10 @@ img.width30 {
 
 img.width50 {
   width: 50%; }
-  
+
+img.width75 {
+  width: 75%; }
+
 div.multicolumn1 {
   -moz-column-count: 2;
   -moz-column-gap: 50%;
@@ -29,8 +32,8 @@ div.multicolumn1 {
 
 .reveal code {
   font-family: monospace;
-  font-size: 30px;
-  color: #bbb; }
+  font-size: 20px;
+  color: #F2F2F2; }
 
 /*********************************************
  * GLOBAL STYLES
@@ -109,7 +112,6 @@ body {
   font-style: italic; }
 
 .reveal ol, .reveal dl, .reveal ul {
-  display: inline-block;
   text-align: left;
   margin: 0 0 0 1em; }
 
@@ -175,8 +177,8 @@ body {
   overflow: auto;
   max-height: 400px;
   word-wrap: normal;
-  background: #E6E6E6;
-  color: #000000; }
+  background: #3F3F3F;
+  color: #DCDCDC; }
 
 .reveal table {
   margin: auto;
