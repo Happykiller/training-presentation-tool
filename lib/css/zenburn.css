@@ -20,7 +20,7 @@ based on dark.css by Ivan Sagalaev
 .hljs-request,
 .hljs-status,
 .clojure .hljs-attribute {
-  color: #E3CEAB;
+  color: #912CCE;
 }
 
 .django .hljs-template_tag,
@@ -92,7 +92,7 @@ based on dark.css by Ivan Sagalaev
 .apache .hljs-cbracket,
 .tex .hljs-formula,
 .coffeescript .hljs-attribute {
-  color: #CC9393;
+  color: #731717;
 }
 
 .hljs-shebang,
